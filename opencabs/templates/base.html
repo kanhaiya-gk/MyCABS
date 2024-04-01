@@ -1,0 +1,14 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content_container %}
+    <div class="container content">
+        {% block content %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block body_class %} default {% endblock %}
+
+{% block navbar_class %} {{ block.super }} affix {% endblock %}
+
+{% block scripts %}{% endblock %}
